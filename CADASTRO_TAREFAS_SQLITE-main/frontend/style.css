@@ -1,0 +1,171 @@
+/* Estilos Globais */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(135deg, #a2c2e2, #f1f1f1);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Container do Gerenciador */
+.container {
+  width: 100%;
+  max-width: 700px;
+  background: #fff;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+/* Cabeçalhos */
+h1 {
+  font-size: 2.5em;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+h3 {
+  font-size: 1.3em;
+  color: #666;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: 500;
+}
+
+/* Estilos do Formulário */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+input, button {
+  padding: 15px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 2px solid #ddd;
+  transition: all 0.3s ease;
+}
+
+input:focus, button:focus {
+  outline: none;
+  border-color: #25ebc0;
+}
+
+/* Campos de Entrada */
+input[type="text"] {
+  background-color: #f9f9f9;
+  color: #555;
+}
+
+input[type="text"]:focus {
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(37, 235, 192, 0.5);
+}
+
+/* Estilo do Botão */
+button {
+  background-color: #25ebc0;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #1cbfa0;
+  transform: translateY(-3px);
+}
+
+button:active {
+  transform: translateY(2px);
+}
+
+/* Resumo de Tarefas */
+#resumo-status {
+  font-size: 1.1em;
+  color: #555;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Estilos da Tabela */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  padding: 12px;
+  text-align: center;
+  font-size: 1em;
+  color: #555;
+}
+
+th {
+  background-color: #25ebc0;
+  color: white;
+  font-weight: bold;
+}
+
+td {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+}
+
+tr:nth-child(even) td {
+  background-color: #f1f1f1;
+}
+
+/* Ações de Tarefas */
+button.edit, button.delete {
+  padding: 8px 15px;
+  font-size: 0.9em;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button.edit {
+  background-color: #ffa500;
+  color: white;
+}
+
+button.delete {
+  background-color: #ff4747;
+  color: white;
+}
+
+button.edit:hover {
+  background-color: #ff9f0b;
+}
+
+button.delete:hover {
+  background-color: #ff3030;
+}
+
+button.edit:active, button.delete:active {
+  transform: translateY(2px);
+}
+
+/* Efeitos de Transição */
+input, button {
+  transition: all 0.3s ease;
+}
